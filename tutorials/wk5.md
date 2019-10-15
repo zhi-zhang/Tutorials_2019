@@ -86,3 +86,6 @@ There are four main directories in your ROS2 workspace (if you are using the Vir
 * `~/mtrn2500_ws/install`: Setup files that are called to ensure that your paths and ROS-related shell (terminal) variables are set correctly
 * `~/mtrn2500_ws/logs`: Logging of output made by various packages
 * `~/mtrn2500_ws/src`: Directory where all source code for ROS2 is contained. The directories in this directory describe and separate all the packages that make up your ROS2 codebase (which is code that either we provide or you have written).
+
+--------------------------
+Written by Adam Tizzone.
