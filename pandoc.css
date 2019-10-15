@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+#TOC a {
+  color: white;
+  text-decoration: none;
+}
+
+:root {
+  --main-bg-color: #222;
+  --global-font-weight: 100;
+  --code-bg-color: #111;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+  background: var(--main-bg-color);
+}
+
+h1, h2, h3, h4 {
+  font-weight: var(--global-font-weight);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+}
+
+em {
+
+}
+
+body {
+  background: var(--main-bg-color);
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 2%;
+  font-weight: var(--global-font-weight);
+  color: white;
+  line-height: 2rem;
+
+/* THE FOLLOWING SECTION IS FROM BELOW
+ * https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load
+ * --- BEGIN ---
+ */
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* --- END --- */
+
+code {
+  font-weight: var(--global-font-weight);
+  font-size: 1rem;
+  font-family: 'Inconsolata', monospace;
+  background: var(--code-bg-color);
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+
+.codeSegment {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+  font-size: 1rem;
+  padding: 1.5rem;
+  font-weight: var(--global-font-weight);
+}
+
